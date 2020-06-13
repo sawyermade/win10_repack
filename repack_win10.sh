@@ -7,8 +7,6 @@ if [ -n "$1" ]
 then
 	temp_og="$1"
 else
-	#echo "Must enter path to original windows 10 iso as argument"
-	#exit 1
 	[ ! -d og ] && mkdir og
 	curl -o og/win10.iso $temp_url
 	temp_og="og/win10.iso"
