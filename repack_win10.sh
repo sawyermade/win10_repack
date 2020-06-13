@@ -17,16 +17,23 @@ else
 	temp_out="win10_repack.iso"
 fi
 
+# Create directories needed
 [ ! -d iso ] && mkdir -p iso/tools
 [ ! -d mnt ] && mkdir mnt
 [ ! -d og ] && mkdir og
+
+# Mount and copy iso
 sudo mount -o loop $temp_og mnt/
 cp -r mnt/* iso/
 chmod -R 755 iso
+
+# Copies lic, kms, and spice tools
 cp conf/* iso/sources/
 cp tools/* iso/tools/
 
+# Create repacked iso ./win10_repack.iso
 genisoimage -b boot/etfsboot.com -no-emul-boot -boot-load-size 8 -iso-level 3 -udf -joliet -D -N -relaxed-filenames -o $temp_out -V win_10_pro_x64_vl -allow-limited-size iso
 
+# If you want to auto cleanup uncomment these
 #sudo umount mnt
-#sudo rm -rf iso mnt
+#sudo rm -rf iso mnt og

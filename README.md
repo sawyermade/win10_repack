@@ -12,4 +12,9 @@ cd win10_repack
 
 # Download og iso, mount og iso, copy files, creates ./win10_repack.iso
 bash ./repack_win10.sh
+
+# Clean up
+sudo umount mnt/
+sudo rm -rf iso mnt
+sudo rm -rf og
 ```
