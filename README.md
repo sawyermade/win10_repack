@@ -1,7 +1,7 @@
 # Repack Win 10 ISO mkisofs / genisoimage
 ## Ubuntu / Debian: Repacks MSDN Win10 Pro to VL w/Lic, KMS, and Spice
 
-KMS and Spice in tools/
+ISO: https://www.microsoft.com/en-us/software-download/windows10ISO
 ```bash
 # Install deps
 sudo apt install mkisofs genisoimage -y

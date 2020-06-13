@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# If no iso is specified as first argument, downloads win10 from MS
+# https://www.microsoft.com/en-us/software-download/windows10ISO
 if [ -n "$1" ]
 then
 	temp_og="$1"
