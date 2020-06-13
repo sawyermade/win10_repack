@@ -1,5 +1,5 @@
 # Repack Win 10 ISO
-## Ubuntu / Debian
+## Ubuntu / Debian: Repacks MSDN Win10 to VL w/Lic, KMS, and Spice
 ```bash
 # Install deps
 sudo apt install mkisofs genisoimg -y
