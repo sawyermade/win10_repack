@@ -2,7 +2,7 @@
 ## Ubuntu / Debian
 ```bash
 # Install deps
-sudo apt install mkisofs genisoimg
+sudo apt install mkisofs genisoimg -y
 
 # Clone and enter directory
 git clone https://github.com/sawyermade/win10_repack
