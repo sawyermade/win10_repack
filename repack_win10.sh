@@ -8,8 +8,9 @@ then
 	temp_og="$1"
 else
 	[ ! -d og ] && mkdir og
-	curl -o og/windows_10_pro_x64_vl-2004.iso $temp_url
-	temp_og="og/windows_10_x64-2004_MSDN.iso"
+	temp_og_fname="windows_10_x64-2004_MSDN.iso"
+	curl -o og/$temp_og_fname $temp_url
+	temp_og="og/$temp_og_fname"
 fi
 
 if [ -n "$2" ]
