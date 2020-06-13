@@ -22,7 +22,6 @@ fi
 # Create directories needed
 [ ! -d iso ] && mkdir -p iso/tools
 [ ! -d mnt ] && mkdir mnt
-[ ! -d og ] && mkdir og
 
 # Mount and copy iso
 sudo mount -o loop $temp_og mnt/
