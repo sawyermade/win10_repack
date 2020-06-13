@@ -11,10 +11,10 @@ git clone https://github.com/sawyermade/win10_repack
 cd win10_repack
 
 # Download og iso, mount og iso, copy files, creates ./windows_10_pro_x64_vl-2004_REPACK.iso
-bash ./repack_win10.sh
+bash repack_win10.sh
 
 # Clean up
-bash ./clean.sh
+bash clean.sh
 
 # Clean all, including new repacked iso
 bash clean.sh all
