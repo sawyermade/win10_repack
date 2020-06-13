@@ -15,4 +15,7 @@ bash ./repack_win10.sh
 
 # Clean up
 bash ./clean.sh
+
+# Clean all, including new repacked iso
+bash clean.sh all
 ```
