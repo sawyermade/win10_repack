@@ -2,6 +2,7 @@
 
 # If no iso is specified as first argument, downloads win10 from MS
 # https://www.microsoft.com/en-us/software-download/windows10ISO
+temp_url="https://software-download.microsoft.com/pr/Win10_2004_English_x64.iso?t=876f0bb8-1a79-4fbc-83e6-1ed8daf37a3d&e=1592113163&h=96ea43427e5d8c77565fb2d73389e56b"
 if [ -n "$1" ]
 then
 	temp_og="$1"
@@ -9,7 +10,7 @@ else
 	#echo "Must enter path to original windows 10 iso as argument"
 	#exit 1
 	[ ! -d og ] && mkdir og
-	curl -o og/win10.iso https://software-download.microsoft.com/pr/Win10_2004_English_x64.iso\?t\=83aed61e-fb8b-4df4-b3f8-114abaa9f41d\&e\=1592110779\&h\=537bc0dd98997d2c3e277e88bc878771
+	curl -o og/win10.iso $temp_url
 	temp_og="og/win10.iso"
 fi
 
