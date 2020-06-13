@@ -10,7 +10,7 @@ sudo apt install mkisofs genisoimage curl -y
 git clone https://github.com/sawyermade/win10_repack
 cd win10_repack
 
-# Download og iso, mount og iso, copy files, creates ./win10_repack.iso
+# Download og iso, mount og iso, copy files, creates ./windows_10_pro_x64_vl-2004_REPACK.iso
 bash ./repack_win10.sh
 
 # Clean up
