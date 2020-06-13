@@ -8,15 +8,15 @@ then
 	temp_og="$1"
 else
 	[ ! -d og ] && mkdir og
-	curl -o og/win10.iso $temp_url
-	temp_og="og/win10.iso"
+	curl -o og/windows_10_pro_x64_vl-2004.iso $temp_url
+	temp_og="og/windows_10_x64-2004_MSDN.iso"
 fi
 
 if [ -n "$2" ]
 then
 	temp_out="$2"
 else
-	temp_out="win10_repack.iso"
+	temp_out="win10_pro_x64_vl-2004_REPACK.iso"
 fi
 
 # Create directories needed
