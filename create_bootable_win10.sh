@@ -20,7 +20,7 @@ chmod -R 755 iso
 cp conf/* iso/sources/
 cp tools/* iso/tools/
 
-genisoimage -b boot/etfsboot.com -no-emul-boot -boot-load-size 8 -iso-level 2 -udf -joliet -D -N -relaxed-filenames -o $temp_out -V win_10_pro_x64-2004 iso
+genisoimage -b boot/etfsboot.com -no-emul-boot -boot-load-size 8 -iso-level 2 -udf -joliet -D -N -relaxed-filenames -o $temp_out -V win_10_pro_x64_vl iso
 
 sudo umount mnt
 sudo rm -rf iso mnt
