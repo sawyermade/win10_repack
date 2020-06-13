@@ -14,7 +14,5 @@ cd win10_repack
 bash ./repack_win10.sh
 
 # Clean up
-sudo umount mnt/
-sudo rm -rf iso mnt
-sudo rm -rf og
+bash ./clean.sh
 ```
