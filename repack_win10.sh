@@ -17,7 +17,7 @@ if [ -n "$2" ]
 then
 	temp_out="$2"
 else
-	temp_out="win10_pro_x64_vl-2004_REPACK.iso"
+	temp_out="windows_10_pro_x64_vl-2004_REPACK.iso"
 fi
 
 # Create directories needed
