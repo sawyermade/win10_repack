@@ -4,7 +4,7 @@
 ISO: https://www.microsoft.com/en-us/software-download/windows10ISO
 ```bash
 # Install deps
-sudo apt install mkisofs genisoimage curl -y
+sudo apt install mkisofs genisoimage curl git -y
 
 # Clone and enter directory
 git clone https://github.com/sawyermade/win10_repack
